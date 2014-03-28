@@ -1,15 +1,19 @@
 .cycle-wheel{
 }
 .cycle-wheel-front{
-	margin: 100px 0 0 200px;
+	margin: 100px 0 0 405px;
+}
+.cycle-wheel-back{
+	margin: 100px 0 0 75px;
 }
 .cycle-wheel-outer{
 	background: transparent;
 	border: 5px solid #aaa;
 	border-radius: 50%;
-	width: 200px;
-	height: 200px;
-	position: relative;
+	width: 190px;
+	height: 190px;
+	position: absolute;
+	margin-top: 5px;
 	-webkit-animation: wheel-rotate 4s linear infinite;
 }
 @-webkit-keyframes wheel-rotate {
@@ -25,7 +29,8 @@
 	width: 1px;
 	height: 200px;
 	background: #ccc;
-	margin: 0 0 0 100px;
+	margin-left: 95px;
+	margin-top: -5px;
 }
 .spoke:after{
 	content: "";
@@ -72,6 +77,10 @@
 
 /* Main Body */
 
+
+.cycle-body{
+	margin-left: 200px;
+}
 .front-wheel-frame{
 	background: #5E999B;
 	width: 8px;
@@ -88,7 +97,37 @@
 	height: 8px;
 	position: absolute;
 	z-index: 2;
-	margin: -26px 0 0 63px;
+	margin: -20px 0 0 62px;
 	transform: rotate(-8deg);
 	-webkit-transform: rotate(-8deg);
+}
+.front-frame{
+	background: #5E999B;
+	width: 8px;
+	height: 191px;
+	position: absolute;
+	z-index: 2;
+	transform: rotate(35deg);
+	-webkit-transform: rotate(35deg);
+	margin: -36px 0 0 189px;
+}
+.center-frame{
+	background: #5E999B;
+	width: 8px;
+	height: 236px;
+	position: absolute;
+	z-index: 2;
+	transform: rotate(-28deg);
+	-webkit-transform: rotate(-28deg);
+	margin: -84px 0 0 82px;
+}
+.back-frame{
+	background: #5E999B;
+	width: 8px;
+	height: 136px;
+	position: absolute;
+	z-index: 2;
+	transform: rotate(20deg);
+	-webkit-transform: rotate(39deg);
+	margin: -23px 0 0 19px;
 }
