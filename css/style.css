@@ -104,22 +104,22 @@
 .front-frame{
 	background: #5E999B;
 	width: 8px;
-	height: 191px;
+	height: 160px;
 	position: absolute;
 	z-index: 2;
-	transform: rotate(35deg);
-	-webkit-transform: rotate(35deg);
+	transform: rotate(41deg);
+	-webkit-transform: rotate(41deg);
 	margin: -36px 0 0 189px;
 }
 .center-frame{
 	background: #5E999B;
 	width: 8px;
-	height: 236px;
+	height: 205px;
 	position: absolute;
 	z-index: 2;
-	transform: rotate(-28deg);
-	-webkit-transform: rotate(-28deg);
-	margin: -84px 0 0 82px;
+	transform: rotate(-33deg);
+	-webkit-transform: rotate(-33deg);
+	margin: -84px 0 0 75px;
 }
 .back-frame{
 	background: #5E999B;
@@ -130,4 +130,92 @@
 	transform: rotate(20deg);
 	-webkit-transform: rotate(39deg);
 	margin: -23px 0 0 19px;
+}
+.bottom-frame{
+	background: #5E999B;
+	width: 159px;
+	height: 8px;
+	position: absolute;
+	z-index: 2;
+	margin: 100px 0 0 -16px;
+}
+
+/* Chain and Pedals */
+
+.chain-wrapper{
+
+}
+.chain-rotation{
+	
+	position: absolute;
+}
+.chain-disc-inner{
+	background: #666;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	position: absolute;
+	margin: 2px;
+	z-index: 4;
+}
+.chain-disc-outer{
+	background: #FFF;
+	width: 22px;
+	height: 22px;
+	border: 5px solid #666;
+	border-radius: 50%;
+	position: absolute;
+	margin: 87px 0 0 325px;
+	z-index: 3;
+	content: "";
+}
+.chain-rods{
+	height: 70px;
+	width: 6px;
+	background: #666;
+	position: absolute;
+	margin: 67px 0 0 338px;
+	z-index: 2;
+}
+.chain-rods:before{
+	content: "";
+	height: 70px;
+	width: 6px;
+	background: #666;
+	position: absolute;
+	/*margin: 67px 0 0 338px;*/
+	transform: rotate(120deg);
+	-webkit-transform: rotate(120deg);
+}
+.chain-rods:after{
+	content: "";
+	height: 70px;
+	width: 6px;
+	background: #666;
+	position: absolute;
+	/*margin: 67px 0 0 338px;*/
+	transform: rotate(240deg);
+	-webkit-transform: rotate(240deg);
+}
+.outer-axle{
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	background: transparent;
+	border: 5px solid #666;
+	position: absolute;
+	margin: 62px 0 0 301px;
+	z-index: 3;
+}
+.outer-axle:after{
+	content: "";
+	height: 74px;
+	width: 74px;
+	border-radius: 50%;
+	background: transparent;
+	border: 5px dotted #666;
+	margin: -7px;
+	position: absolute;
+	z-index: 3;
+	-webkit-animation: wheel-rotate 4s linear infinite;
 }
