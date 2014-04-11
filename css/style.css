@@ -1,10 +1,52 @@
-.cycle-wheel{
+body{
+	background: #f0ffff; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #f0ffff 0%, #dbffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#f0ffff), color-stop(100%,#dbffff)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #f0ffff 0%,#dbffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #f0ffff 0%,#dbffff 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #f0ffff 0%,#dbffff 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #f0ffff 0%,#dbffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0ffff', endColorstr='#dbffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	gid:DXImageTransform
+	.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.banner {
+	position: fixed;
+	width: 100%;
+	background: #000;
+	top: 0;
+	color: #FFF;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 10px;
+	font-weight: lighter;
+	font-size: 13px;
+}
+a, a:visited, a:link, a:active {
+	color: green;
+	text-decoration: underline;
+}
+a, a:visited, a:link, a:active {
+	color: green;
+	text-decoration: underline;
+}
+a, a:visited, a:link, a:active {
+	color: green;
+	text-decoration: underline;
+}
+.cycle-wrapper{
+	width: 534px;
+	height: 260px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	margin-top: -160px;
 }
 .cycle-wheel-front{
-	margin: 100px 0 0 405px;
+	margin: 100px 0 0 330px;
 }
 .cycle-wheel-back{
-	margin: 100px 0 0 75px;
+	margin: 100px 0 0 0px;
 }
 .cycle-wheel-outer{
 	background: transparent;
@@ -115,7 +157,7 @@
 
 
 .cycle-body{
-	margin-left: 200px;
+	margin-left: 125px;
 }
 .front-wheel-frame{
 	background: #5E999B;
@@ -273,7 +315,7 @@
 	border: 5px solid #666;
 	border-radius: 50%;
 	position: absolute;
-	margin: 87px 0 0 325px;
+	margin: 87px 0 0 250px;
 	z-index: 3;
 	content: "";
 }
@@ -282,7 +324,7 @@
 	width: 6px;
 	background: #666;
 	position: absolute;
-	margin: 67px 0 0 338px;
+	margin: 67px 0 0 263px;
 	z-index: 15;
 	-webkit-animation: wheel-rotate 2s linear infinite;
 }
@@ -311,7 +353,7 @@
 	background: transparent;
 	border: 5px solid #666;
 	position: absolute;
-	margin: 62px 0 0 301px;
+	margin: 62px 0 0 226px;
 	z-index: 3;
 }
 .outer-axle:after{
@@ -336,7 +378,7 @@
 	z-index: 9;
 	background: #EEE;
 	-webkit-transform: rotate(-11deg);
-	margin: 76px 0 0 173px;
+	margin: 76px 0 0 98px;
 }
 .chain-up:before{
 	content: "";
@@ -364,7 +406,7 @@
 	z-index: 9;
 	background: #EEE;
 	-webkit-transform: rotate(9deg);
-	margin: 127px 0 0 173px;
+	margin: 127px 0 0 98px;
 }
 .chain-bottom:before{
 	content: "";
@@ -459,10 +501,10 @@
 }
 @-webkit-keyframes pedal1 {
     0% { -webkit-transform: rotate(00deg); }
-    25% { -webkit-transform: rotate(45deg); }
-    50% { -webkit-transform: rotate(00deg); }
-    75% { -webkit-transform: rotate(-45deg); }
-    100% { -webkit-transform: rotate(0deg); }
+    25% { -webkit-transform: rotate(-140deg); }
+    50% { -webkit-transform: rotate(-180deg); }
+    75% { -webkit-transform: rotate(-240deg); }
+    100% { -webkit-transform: rotate(-360deg); }
 }
 @-ms-keyframes pedal1 {
     0% { background-position: 0 25%; }
@@ -479,10 +521,10 @@
 }
 @-webkit-keyframes pedal2 {
     0% { -webkit-transform: rotate(00deg); }
-    25% { -webkit-transform: rotate(-45deg); }
-    50% { -webkit-transform: rotate(00deg); }
-    75% { -webkit-transform: rotate(45deg); }
-    100% { -webkit-transform: rotate(0deg); }
+    25% { -webkit-transform: rotate(-60deg); }
+    50% { -webkit-transform: rotate(-180deg); }
+    75% { -webkit-transform: rotate(-340deg); }
+    100% { -webkit-transform: rotate(-360deg); }
 }
 @-ms-keyframes pedal1 {
     0% { background-position: 0 25%; }
@@ -506,7 +548,7 @@
 }
 .bottle-holder:before{
 	background-color: #daeded;
-    width: 20px;
+    width: 18px;
     height: 10px;
     border-radius: 30% / 100%;
     border-bottom-left-radius: 0;
@@ -514,6 +556,8 @@
     content: "";
     position: absolute;
     margin-top: -13px;
+    border: 1px solid #98baba;
+    border-bottom: 0;
 }
 .bottle-holder span{
 	position: absolute;
